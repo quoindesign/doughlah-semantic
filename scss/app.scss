@@ -41,3 +41,60 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+
+/* Buttons */
+.button.hollow {
+	border-width: $button-border-width !important;
+	text-transform: uppercase;
+	color: $black;
+	border-color: $black;
+}
+
+.button.hollow:hover {
+	
+	color: $button-background-hover;
+	border-color: $button-background-hover;
+}
+
+.button.secondary.hollow {
+	color: $white;
+	border-color: $white;
+	
+}
+
+/* Text Callout */ 
+
+.text-callout {
+	
+	float: right;
+	border-width: 2px 0 0 0;
+	margin-left: 1em;
+	q {
+			font-size: 1.5em;
+			font-family: $header-font-family;
+		}
+
+	cite {
+		font-size: 100%;
+		text-align: right;
+		&:before {
+			content:"– ";
+		}
+	}
+
+}
+
+/* Table */ 
+th {
+	font-weight: $table-head-font-weight;
+	border-bottom: 2px solid $primary-color;
+}
+
+/* Nav */
+.dropdown.menu .submenu.first-sub {
+	border-top: 5px solid $primary-color;
+}
+.dropdown.menu .has-submenu.is-down-arrow:hover {
+	// border-bottom: 4px solid $primary-color;
+}
